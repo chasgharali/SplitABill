@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_background"
+    tools:context=".FragHandler.SplitShareFragHandler">
+
+
+    <TextView
+        android:id="@+id/fragment_calculate_total_bill_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Amount: "
+        android:textColor="#2c3e50"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/textview_total_persons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#2c3e50"
+        android:layout_below="@id/fragment_calculate_total_bill_txt"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="No of Person:" />
+
+
+    <Spinner
+        android:id="@+id/totalPersonsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_calculate_total_bill_txt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:textColor="#2c3e50"
+        android:layout_toRightOf="@id/textview_total_persons"/>
+
+
+    <TextView
+        android:id="@+id/fragment_calculate_tip_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPersonsSpinner"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#2c3e50"
+        android:text="Tip:"
+        android:textSize="15sp"/>
+
+    <SeekBar
+        android:id="@+id/fragment_calculate_tipPercentage_seekbar"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fragment_calculate_tip_title_txt"
+        android:layout_alignTop="@+id/fragment_calculate_seekpercentage_txt"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/fragment_calculate_seekpercentage_txt"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/fragment_calculate_tip_title_txt"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#2c3e50"
+        android:layout_toEndOf="@id/fragment_calculate_tipPercentage_seekbar"
+        android:gravity="center"
+        android:text="00.00%" />
+
+    <EditText
+        android:id="@+id/fragment_calculate_tip_txt"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fragment_calculate_tip_title_txt"
+        android:layout_alignBottom="@+id/fragment_calculate_tip_title_txt"
+        android:layout_toEndOf="@+id/fragment_calculate_tip_title_txt"
+        android:gravity="center"
+        android:text="0.0"
+        android:inputType="number"
+        android:textColor="#2c3e50" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fragment_calculate_tip_title_txt"
+        android:layout_below="@+id/fragment_calculate_seekpercentage_txt"
+        android:layout_marginTop="33dp"
+        android:text="Total:"
+        android:textColor="#2c3e50"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/fragment_calculate_each_pay_txt"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:gravity="center"
+        android:text="0.0"
+        android:textColor="#2c3e50"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>
